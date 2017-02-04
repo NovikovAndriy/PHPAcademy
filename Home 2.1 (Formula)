@@ -1,0 +1,19 @@
+<!Doctype Html>
+<html>
+    <head>
+        <title> Ускорение </title>
+            <script type="text/javascript">
+
+            var v = prompt("Введите начальную скорость, V", "сюда");
+            var t = prompt("Введите время, t", "сюда");
+            var g = 9.8;
+            var h = ((g*(t*t)) / "2") + v*t;
+            document.writeln ("При условии, что начальная скорость равна");
+            document.writeln (v + " м/с,");
+            document.writeln ("а время будет");
+            document.writeln (t + " секунд" + "<br/>");
+            document.writeln ("Высота падения составит");
+            document.write (h + " метров" + "<br/>");
+        </script>
+    </head>
+</html>
