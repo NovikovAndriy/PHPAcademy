@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flexbox</title>
+		<meta charset="utf-8">
+		<style>
+           
+			body{
+				background: black; 
+
+			}
+
+			.container{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                margin: 15px; 
+				border: 5px solid white; 
+				padding: 10px; 
+				background: #d3d3d3;
+                max-width: 1200px;
+                height: auto;
+                margin: 30px;
+                justify-content: center;
+                align-items: stretch;
+                align-content: stretch;
+                flex-flow: row wrap;
+               
+            }
+            
+            .item{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 300px;
+                text-align: center;
+                padding: 5px; 
+				border:1px solid #ddd;
+                
+            }
+            
+            .fl1 {background: #b7b7b7; margin-bottom: 20px; border-color: aqua; flex-basis: 100%;}
+            .fl2 {background: #f4628e; border-color: aqua; order: 1;}
+            .fl3 {background: #c891d2; border-color: aqua; order: 2;}
+            .fl4 {background: #b60c3f; border-color: aqua; order: 3;}
+            .fl5 {background: #1bac8c; border-color: aqua; order: 4;}
+            .fl6 {background: #5159c0; border-color: aqua; order: 5;}
+            .fl7 {background: #b7b7b7; margin-top: 20px; border-color: aqua; order: 6; flex-basis: 100%;}
+            
+		</style>
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<div class="item fl1"><b>Header</b><br>This is Header</div>
+            <div class="item fl2"><b>Container1</b><br>This is Container</div>
+            <div class="item fl3"><b>Container2</b><br>This is Container</div>
+            <div class="item fl4"><b>Container3</b><br>This is Container</div>
+            <div class="item fl5"><b>Container4</b><br>This is Container</div>
+            <div class="item fl6"><b>Container5</b><br>This is Container</div>
+            <div class="item fl7"><b>Footer</b><br>This is Footer</div>
+		</div>
+	
+	</body>
+</html>
