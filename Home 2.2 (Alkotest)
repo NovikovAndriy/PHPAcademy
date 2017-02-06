@@ -1,0 +1,28 @@
+<!Doctype Html>
+<html>
+<Head>
+    <Title> Alkotest </Title>
+    <script type="text/javascript",>
+        var age = prompt("введите Ваш возраст", "0");
+        var child = 6;
+        var young = 12;    
+        var drinkage = 18;      
+        var a=parseInt(age);
+        var b=parseInt(child);
+        var c=parseInt(young);
+        var d=parseInt(drinkage);        
+        if (a <= b) {
+            document.write("Тебе пока рано думать про алкоголь!");        
+        }
+        else if (a > b && a <= c) {
+            document.write("Пока пей компот!");
+        }      
+        else if (a > c && a < d) {
+            document.write("Попробуй Колу");
+        }
+        else {
+            document.write("Теперь можно Пиво выпить");
+        }        
+    </script>
+</Head>
+</html>
